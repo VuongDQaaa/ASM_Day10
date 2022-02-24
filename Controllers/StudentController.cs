@@ -16,7 +16,7 @@ namespace ASM_Day10.Controllers
         }
 
         [HttpPost("/add")]
-        public async Task AddStudent(StudentDTO student)
+        public async Task AddStudent([FromBody]StudentDTO student)
         {
             await _service.AddStudent(student);
         }
@@ -40,7 +40,7 @@ namespace ASM_Day10.Controllers
         }
 
         [HttpPost("/update")]
-        public async Task UpdateStudent(Student student)
+        public async Task UpdateStudent([FromBody]Student student)
         {
             await _service.UpdateStudent(student);
         }
