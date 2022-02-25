@@ -1,7 +1,7 @@
 using ASM_Day10.Entities;
 using ASM_Day10.DTO;
 
-namespace ASM_Day10.Interface
+namespace ASM_Day10.Interfaces
 {
     public interface IStudentService
     {
